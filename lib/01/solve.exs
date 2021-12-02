@@ -19,7 +19,7 @@ IO.puts(solution)
 
 [prev_depth_a, prev_depth_b, prev_depth_c | depths] = all_depths
 
-{solution, _, _, _} =
+{solution | _} =
   List.foldl(
     depths,
     {0, prev_depth_a, prev_depth_b, prev_depth_c},
